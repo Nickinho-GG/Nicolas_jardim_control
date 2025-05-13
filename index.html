@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Plantas - Jardim</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Controle de Plantas do Jardim</h1>
+    
+    <form id="plantForm">
+      <label for="nome">Nome da Planta:</label>
+      <input type="text" id="nome" required>
+      
+      <label for="tipo">Tipo de Planta:</label>
+      <input type="text" id="tipo" required>
+      
+      <label for="frequencia">Frequência de Rega (dias):</label>
+      <input type="number" id="frequencia" min="1" required>
+      
+      <button type="submit">Adicionar Planta</button>
+    </form>
+    
+    <h2>Lista de Plantas</h2>
+    <ul id="listaPlantas">
+      <!-- A lista de plantas será gerada aqui pelo JavaScript -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
