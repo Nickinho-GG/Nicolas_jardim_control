@@ -1,0 +1,16 @@
+-- Criação do banco de dados 'jardim' (caso ainda não exista)
+CREATE DATABASE IF NOT EXISTS jardim;
+
+-- Seleciona o banco de dados 'jardim' para trabalhar com ele
+USE jardim;
+
+-- Criação da tabela 'plantas'
+CREATE TABLE IF NOT EXISTS plantas (
+    id INT AUTO_INCREMENT PRIMARY KEY,    -- Identificador único da planta
+    nome VARCHAR(100) NOT NULL,           -- Nome da planta
+    tipo VARCHAR(100) NOT NULL,           -- Tipo da planta
+    frequencia_rega INT NOT NULL         -- Frequência de rega em dias
+);
+
+-- Mensagem para confirmar que o banco e a tabela foram criados com sucesso
+SELECT "Banco e Tabela Criados com Sucesso!" AS Resultado;
